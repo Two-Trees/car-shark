@@ -1,0 +1,44 @@
+### create account 
+POST http://localhost:3000/auth/create-account
+content-type: application/json
+
+{
+    "email": "matt@mit.edu",
+    "password": "123"
+}
+
+### login
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "matt@mit.edu",
+    "password": "123"
+}
+
+### logout
+POST http://localhost:3000/auth/logout
+
+### get current user 
+GET http://localhost:3000/auth/current-user
+
+### Find user by ID
+GET http://localhost:3000/auth/2
+
+### find all users with a specific email
+GET http://localhost:3000/auth?email=bob@mit.life
+
+### Delete a user by id
+DELETE http://localhost:3000/auth/2
+
+### Update a user
+PATCH http://localhost:3000/auth/5
+content-type: application/json
+
+{
+    "password": "321"
+}
+
+
+
+

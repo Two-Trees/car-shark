@@ -1,0 +1,26 @@
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+  "make": "Ford",
+  "model": "F150",
+  "year": 2000,
+  "mileage": 70000,
+  "lng": 45,
+  "lat": 45,
+  "price": 15000
+}
+
+### approve a report 
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+  "approved": true
+}
+
+### Get an estimate for car in db
+GET http://localhost:3000/reports?make=ferrari&model=Civic&year=2010&mileage=120000&lng=0&lat=0
+
+### Get an estimate for car in db
+GET http://localhost:3000/reports?make=Ford&model=F150&year=2013&mileage=120000&lng=45&lat=45
