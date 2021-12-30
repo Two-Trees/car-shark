@@ -1,6 +1,6 @@
 ## Description
 
-Udemy Course taught by Stephen Grider 
+Udemy Coursework for tutorial taught by Stephen Grider 
 
 ## Stay in touch
 
